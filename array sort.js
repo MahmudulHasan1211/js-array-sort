@@ -1,6 +1,10 @@
-const numbers = [4, 7, 5, 2, 8, 9]
+const numbers = [2, 3, 12, 4, 38,0]
 
-// ascending
+// for ascending
+const numbers_asc = [...numbers].sort(function(a,b){return a - b})
 
- const numbers_asc = numbers.sort()
- console.log(numbers_asc)
+// for descending 
+const numbers_dsc = [...numbers].sort(function(a,b){return b - a})
+
+console.log(numbers_asc)
+console.log(numbers_dsc)
